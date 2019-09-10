@@ -1,0 +1,27 @@
+{
+  "name": "newnewnewh5",
+  "version": "1.0.0",
+  "description": "最新仓库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zgxcba/newnewnewH5.git"
+  },
+  "author": "aa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zgxcba/newnewnewH5/issues"
+  },
+  "homepage": "https://github.com/zgxcba/newnewnewH5#readme",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
