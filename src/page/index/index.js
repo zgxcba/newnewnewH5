@@ -1,6 +1,3 @@
-var cats = require('./cats.js');
-var common = require('../common.js');
+'use strict'
 require('./index.css');
-common();
-console.log(cats);
-$('body').html("12234342");
+$('body').html("服务的表达出吧");
