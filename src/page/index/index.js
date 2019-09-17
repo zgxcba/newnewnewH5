@@ -1,3 +1,6 @@
 'use strict'
 require('./index.css');
-$('body').html("服务的表达出吧");
+
+var _mm = require('util/mm.js');
+alert(123);
+

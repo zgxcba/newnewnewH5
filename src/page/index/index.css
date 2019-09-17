@@ -1,5 +1,6 @@
 body{
-	border-image: url('../../image/1.jpg');
-	background-repeat: no-repeat;
+	/*border-image: url('../../image/1.jpg');
+	background-repeat: no-repeat;*/
+	background-color: red;
 
 }

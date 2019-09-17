@@ -57,7 +57,12 @@ var config = {
 		new ExtractTextPlugin("css/[name].css"),
 		new HtmlWebpackPlugin(getHtmlConfig('index')),
 		new HtmlWebpackPlugin(getHtmlConfig('user-login'))
-	]
+	],
+	resolve:{
+		alias:{
+			util:__dirname+'/src/util'
+		}
+	}
 }
 
 if('dev' === WEBPACK_ENV){
