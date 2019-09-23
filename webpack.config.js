@@ -2,6 +2,7 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-Webpack-Plugin');
 
+var str = new Buffer('aHR0cDovL3Rlc3QuaGFwcHltbWFsbC5jb20v', 'base64');
 var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 var getHtmlConfig = function(name){
 	return {
@@ -60,7 +61,21 @@ var config = {
 	],
 	resolve:{
 		alias:{
-			util:__dirname+'/src/util'
+			util:path.resolve(__dirname,'src/util'),
+			"@":path.resolve(__dirname,'src/page'),
+			node_modules:path.resolve(__dirname,'node_modules'),
+			service:path.resolve(__dirname,'src/service')
+		}
+		
+	},
+	devServer:{
+		port:8088,
+		inline:true,
+		proxy:{
+			"**/*.do":{
+				target:str.toString(),
+				changeOrigin:true
+			}
 		}
 	}
 }
