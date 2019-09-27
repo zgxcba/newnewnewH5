@@ -3,9 +3,14 @@ require('./index.css');
 
 require('@/common/nav-simple/index.js');
 require('@/common/nav/index.js');
+require('@/common/header/index.js');
+var navSide = require('@/common/nav-side/index.js');
 
 var _mm = require('util/mm.js');
 
+navSide.init({
+	name:'user-center'
+});
 
 /*_mm.request({
 	url:'/product/list.do?keyword=1',
